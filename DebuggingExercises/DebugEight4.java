@@ -14,20 +14,27 @@ public class DebugEight4
      
       entry = JOptionPane.showInputDialog(null,
         "Enter any word\n" +
-        "Enter " + STOP " when you want to stop"); 
-      while(!(entry.equals(STOP))
+        "Enter " + STOP + " when you want to stop");
+      while(!(entry.equals(STOP)))
       {
-         array[STOP] = entry;
-         entry = JOptionPane.showinputDialog(null,
+         array[x] = entry;
+
+         array[Integer.parseInt(STOP)] = entry;
+         entry = JOptionPane.showInputDialog(null,
             "Enter another word\n" +
-            "Enter " + STOP + " when you want to stop"); 
+            "Enter " + STOP + " when you want to stop");
       }
-      for(y = 0; y > 0; ++y);
-      {
-         message.append(array[y]);
-         message.append("\n");
+      y = x-1;
+      while (y >= 0) {
+         ++y;
       }
-      JOptionPane.showMessageDialog(null, message);
+
+         {
+            message.append(array[y]);
+            message.append("\n");
+         }
+         JOptionPane.showMessageDialog(null, message);
+
    }
 }
 
