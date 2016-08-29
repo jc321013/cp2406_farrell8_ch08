@@ -12,9 +12,11 @@ public class DistanceFromAverage
         double average = 0;
         final int STOP = 99999;
         int i = 0, y;
-        System.out.print("Enter a numeric value or " +
+
+        System.out.print("Enter value or " +
                 STOP + " when you want to stop: ");
         entry = input.nextDouble();
+
         while(entry != STOP && i < numbers.length)
         {
             numbers[i] = entry;
@@ -22,12 +24,12 @@ public class DistanceFromAverage
             ++i;
             if(i < numbers.length)
             {
-                System.out.print("Enter next numeric value or " +
+                System.out.print("Enter next value or " +
                         STOP + " when you want to stop: ");
                 entry = input.nextDouble();
             }
         }
-        {
+
             average = total / i;
             System.out.println("You entered " + i +
                     " numbers and their average is " + average);
@@ -36,4 +38,4 @@ public class DistanceFromAverage
                         (numbers[y] - average) + " away from the average");
         }
     }
-}
+
