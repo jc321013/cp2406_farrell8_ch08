@@ -12,7 +12,7 @@ public class DebugEight3
       char plan;
       int x, fp = 99;
       String prompt = "Please select a floor plan\n" +
-          "Our floorPlanss are:\n" + "A - Augusta, a ranch\n" +
+          "Our floorPlans are:\n" + "A - Augusta, a ranch\n" +
           "B - Brittany, a split level\n" +
           "C - Colonial, a two-story\n" +
           "Enter floorPlans letter";

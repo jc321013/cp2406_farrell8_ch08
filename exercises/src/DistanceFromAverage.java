@@ -9,7 +9,7 @@ public class DistanceFromAverage
         double[] numbers = new double[20];
         double entry;
         double total = 0;
-        double average = 0;
+        double average;
         final int STOP = 99999;
         int i = 0, y;
 
